@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import { useUser } from '@/hooks/user/useUser';
-import { useEffect } from 'react';
 import {
   DashboardLogo,
   HomeIcon,
@@ -9,8 +7,6 @@ import {
   SearchIcon,
   SignOutIcon,
 } from '@/components/Icons';
-import { useLogout } from '@/hooks/useAuth';
-import { toast } from 'react-toastify';
 import ThemeSwitch from '@/components/ThemeSwitch';
 
 export interface navList {
@@ -45,20 +41,6 @@ export const navLists = [
 
 // icon: <PersonIcon />,
 const Navigation = () => {
-  // const { data: session } = useSession()
-  const { data: currentUser } = useUser();
-  const logout = useLogout();
-
-  const handleLogout = () => {
-    logout();
-    window.location.href = '/login';
-    toast.success('Logged Out!');
-  };
-
-  useEffect(() => {
-    return () => {};
-  }, [currentUser]);
-
   return (
     // <Container>
     <nav className=' z-90 sticky top-0 bottom-0 flex h-screen w-24 select-none flex-col items-center py-4 font-mono backdrop-blur'>
