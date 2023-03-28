@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from './Section';
 import LightBG from '../core/Layouts/LightBG';
-import { OutdoorEvents as data } from '@/data/OutDoorEvents';
+import { outEventdata as data } from '@/data/outEventdata';
 
 function OutdoorEvents() {
   return (

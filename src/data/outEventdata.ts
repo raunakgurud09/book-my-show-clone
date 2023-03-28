@@ -1,4 +1,4 @@
-export const OutdoorEvents = [
+export const outEventdata = [
   {
     _id: 1,
     name: 'Vodka and No Tonic-Mumbai',
