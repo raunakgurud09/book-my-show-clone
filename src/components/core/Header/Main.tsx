@@ -28,7 +28,7 @@ function Main() {
             <input
               type='text'
               placeholder='Search for Movies, Events, Plays, Sports and Activities'
-              className='h-9 w-[500px] rounded-r-[4px] border-none  p-2 text-zinc-200 focus:border-none '
+              className='h-9 w-[500px] rounded-r-[4px] active:border-none border-none  p-2 text-zinc-200 focus:border-none '
             />
           </div>
         </div>
