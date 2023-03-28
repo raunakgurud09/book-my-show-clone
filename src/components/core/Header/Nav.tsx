@@ -46,12 +46,12 @@ function Nav() {
       <div className='mx-auto flex h-fit max-w-[1240px] items-center justify-between px-2'>
         <div className='flex items-center justify-center space-x-8 text-gray-400'>
           {navList.map((nav) => (
-            <div key={nav.name} className='relative  py-2'>
+            <div key={nav.name} className='relative  '>
               <Link href={nav.href} className='font-medium text-sm hover:text-gray-100'>
                 {nav.name}
               </Link>
               {nav?.new === true && (
-                <span className='absolute top-2 right-[0.5] text-[8px] font-semibold text-cyan-300'>
+                <span className='absolute top-0 right-[0.5] text-[8px] font-semibold text-pink'>
                   NEW
                 </span>
               )}
@@ -60,12 +60,12 @@ function Nav() {
         </div>
         <div className='flex items-center justify-center space-x-6 text-gray-200'>
           {options.map((nav) => (
-            <div key={nav.name} className='relative text-sm py-4'>
+            <div key={nav.name} className='relative text-sm py-[10px]'>
               <Link key={nav.name} href={nav.href} className=''>
                 {nav.name}
               </Link>
               {nav?.new === true && (
-                <span className='absolute top-2 right-[0.5] text-[8px] font-semibold text-cyan-300'>
+                <span className='absolute top-0 right-[5] text-[8px] font-semibold text-pink'>
                   NEW
                 </span>
               )}
