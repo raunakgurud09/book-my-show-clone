@@ -60,7 +60,7 @@ function Nav() {
         </div>
         <div className='flex items-center justify-center space-x-6 text-gray-200'>
           {options.map((nav) => (
-            <div key={nav.name} className='relative  py-4'>
+            <div key={nav.name} className='relative text-sm py-4'>
               <Link key={nav.name} href={nav.href} className=''>
                 {nav.name}
               </Link>

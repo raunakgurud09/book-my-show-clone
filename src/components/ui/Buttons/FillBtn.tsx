@@ -1,8 +1,11 @@
 import React from 'react';
+import cx from 'classnames';
 
-function FillBtn({ text }) {
+function FillBtn({ text, cns }) {
   return (
-    <div className='rounded-[4px] bg-pink-600 px-4 py-2 text-white'>{text}</div>
+    <div className={cx('rounded-[4px] bg-pink-600 cursor-pointer w-fit h-fit text-white', cns)}>
+      {text}
+    </div>
   );
 }
 

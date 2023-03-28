@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         primary: ['Inter', ...fontFamily.sans],
       },
+      backgroundImage: {
+        'hero-pattern': "url('./public/images/John-wick.jpg')",
+      },
       colors: {
         primary: {
           // Customize it on globals.css :root
