@@ -5,7 +5,7 @@ import DisplayCard from '../ui/Cards/DisplayCard';
 
 function Section({ text, data }) {
   return (
-    <div className='w-full space-y-4 py-8'>
+    <div className='w-full space-y-2 py-8'>
       <div className='flex items-center justify-between'>
         <h3 className='text-2xl font-bold'>{text}</h3>
         <Link href='/' className='text-sm text-pink'>
@@ -16,7 +16,7 @@ function Section({ text, data }) {
         <span className='absolute top-1/3 left-1 flex h-8 w-8 items-center justify-center rounded-full bg-slate-700/80 font-bold text-white'>
           <p>&lt;</p>
         </span>
-        <div className='left-0 flex items-center space-x-9'>
+        <div className='left-0 flex items-center space-x-6'>
           {data.map((movie) => (
             <>
               <DisplayCard

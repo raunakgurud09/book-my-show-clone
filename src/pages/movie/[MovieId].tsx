@@ -5,7 +5,8 @@ import FillBtn from '@/components/ui/Buttons/FillBtn';
 import Image from 'next/image';
 import cx from 'classnames';
 import { Movies } from '@/data/Movies';
-import image from '../../../public/images/John-wick.jpg';
+import OutBtn from '@/components/ui/Buttons/OutBtn';
+import { ShareIcon } from '@/components/Icons';
 
 function index({ name, imageUrl, time, previewText, about }) {
   return (
@@ -49,7 +50,10 @@ function index({ name, imageUrl, time, previewText, about }) {
                   </div>
                 </div>
               </div>
-              <div className='text-3xl text-white'>share</div>
+              <div className='text-3xl text-white'>
+                {/* <OutBtn text='share' icon={<ShareIcon />} cns='' /> */}
+                {/* <ShareIcon /> */}
+              </div>
             </div>
           </div>
         </div>
@@ -60,10 +64,10 @@ function index({ name, imageUrl, time, previewText, about }) {
             <div className='w-2/3'>{about}</div>
           </Title>
           <Title title='Cast'>
-            <div>sjfld</div>
+            <div>info</div>
           </Title>
           <Title title='You might also like'>
-            <div>sjfld</div>
+            <div>render more related content</div>
           </Title>
         </div>
       </LightBG>

@@ -6,7 +6,7 @@ import { outEventdata as data } from '@/data/outEventdata';
 function OutdoorEvents() {
   return (
     <LightBG>
-      <Section text='Shows Near You' data={data} />
+      <Section text='Outdoor Events' data={data} />
     </LightBG>
   );
 }

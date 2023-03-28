@@ -11,13 +11,16 @@ import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
 
-import logo from '../../../../public/images/logo.png';
-
 function Main() {
+
+  const handleSelectCities = () =>{
+    console.log("change city")
+  }
+
   return (
     <div className=' bg-slate-800 py-3'>
-      <div className='m-auto flex  h-full max-w-[1500px] items-center justify-between px-10'>
-        <div className='flex space-x-4'>
+      <div className='m-auto flex  h-full max-w-[1240px] items-center justify-between px-2'>
+        <div className='flex space-x-2 items-center'>
           <Link href='/' className='h-full w-24 flex items-center justify-center'>
             <BookMyShow />
           </Link>
@@ -32,16 +35,16 @@ function Main() {
             />
           </div>
         </div>
-        <div className='flex items-center justify-between space-x-8'>
-          <div className='flex cursor-pointer items-center space-x-2 px-2 py-1 text-white'>
-            <p>Mumbai</p>
-            <div className='h-4 w-4 rotate-90'>
+        <div className='flex items-center justify-between space-x-4'>
+          <div className='flex cursor-pointer items-center space-x-2 px-2 py-1 text-white' onClick={handleSelectCities}>
+            <p className='text-sm'>Mumbai</p>
+            <div className='h-3 w-3 rotate-90'>
               <Play />
             </div>
           </div>
-          <FillBtn text='sign up' cns='px-2 py-1' />
+          <FillBtn text='sign up' cns='px-4 py-1 text-sm' />
           <span
-            className='w-10 cursor-pointer fill-current text-white hover:text-primary-500'
+            className='w-6 cursor-pointer fill-current text-white hover:text-primary-500'
             aria-label='navigation menu'
             role='button'
           >

@@ -30,3 +30,4 @@ export { default as ThreeDots } from './ThreeDots';
 export { default as Play } from './Play';
 export { default as Pause } from './Pause';
 export { default as BookMyShow } from './BookMyShow';
+export { default as ShareIcon } from './ShareIcon';

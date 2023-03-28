@@ -17,12 +17,10 @@ const Home = ({ working }) => {
   return (
     <>
       {working ? (
-        // <div className='m-auto flex h-full max-w-[1500px] items-center justify-between px-10'>
+        // <div className='m-auto flex h-full max-w-[1240px] items-center justify-between px-2'>
         //   <div className='flex w-full flex-col bg-yellow-800'>
         <>
-          <LightBG>
-            <Banner />
-          </LightBG>
+          {/* <Banner /> */}
           <Recommended />
           <Advertisement />
           <LiveEvents />

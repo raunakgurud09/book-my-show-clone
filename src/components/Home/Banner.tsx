@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import LightBG from '../core/Layouts/LightBG';
 
 function Banner() {
   return (
-    <div>Banner</div>
-  )
+    <LightBG>
+      <div>Banner</div>
+    </LightBG>
+  );
 }
 
-export default Banner
+export default Banner;

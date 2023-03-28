@@ -26,7 +26,7 @@ function createPlaylist({ show, onClose }) {
               <>
                 <div
                   onClick={() => setOption(index)}
-                  className='rounded-full bg-slate-700/30 p-2 px-6'
+                  className='rounded-full bg-slate-700/30 p-2 px-4'
                 >
                   {option}
                 </div>

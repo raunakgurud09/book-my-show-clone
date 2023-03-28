@@ -9,7 +9,7 @@ export default function FilledButton({ text, href, classNames, onClick }: any) {
           href={href}
           role='button'
           className={cx(
-            'mr-2 w-auto rounded-3xl bg-indigo-800 px-6 py-3 text-sm font-medium text-white dark:bg-indigo-500',
+            'mr-2 w-auto rounded-3xl bg-indigo-800 px-4 py-3 text-sm font-medium text-white dark:bg-indigo-500',
             classNames
           )}
           passHref
@@ -20,7 +20,7 @@ export default function FilledButton({ text, href, classNames, onClick }: any) {
         <button
           onClick={onClick}
           className={cx(
-            'mr-2 w-auto rounded-3xl bg-indigo-800 px-6 py-3 text-sm font-medium text-white dark:bg-indigo-500',
+            'mr-2 w-auto rounded-3xl bg-indigo-800 px-4 py-3 text-sm font-medium text-white dark:bg-indigo-500',
             classNames
           )}
         >

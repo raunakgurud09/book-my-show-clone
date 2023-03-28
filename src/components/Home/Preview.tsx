@@ -6,7 +6,7 @@ import { Previews as data } from '@/data/Preview';
 function Preview() {
   return (
     <DarkBG>
-      <Section text='Shows Near You' data={data} />
+      <Section text='Previews' data={data} />
     </DarkBG>
   );
 }
