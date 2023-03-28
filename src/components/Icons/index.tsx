@@ -29,3 +29,4 @@ export { default as VolumeIcon } from './VolumeIcon';
 export { default as ThreeDots } from './ThreeDots';
 export { default as Play } from './Play';
 export { default as Pause } from './Pause';
+export { default as BookMyShow } from './BookMyShow';

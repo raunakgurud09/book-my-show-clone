@@ -13,6 +13,7 @@ module.exports = {
         'hero-pattern': "url('./public/images/John-wick.jpg')",
       },
       colors: {
+        pink: '#F84464',
         primary: {
           // Customize it on globals.css :root
           50: 'rgb(var(--tw-color-primary-50) / <alpha-value>)',

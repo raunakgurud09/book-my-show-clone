@@ -4,6 +4,7 @@ import Title from '@/components/core/Layouts/Title';
 import Error from '@/components/Error';
 import Advertisement from '@/components/Home/Advertisment';
 import Banner from '@/components/Home/Banner';
+import LiveEvents from '@/components/Home/LiveEvents';
 import Section from '@/components/Home/Section';
 import LiveEventsCard from '@/components/ui/Cards/LiveEventsCard';
 
@@ -27,22 +28,11 @@ const Home = ({ working }) => {
           <LightBG>
             <Section text='Shows Near You' />
           </LightBG>
-          <LightBG>
-            <Title title='The best of live events'>
-              <div className='flex space-x-10'>
-                <LiveEventsCard />
-                <LiveEventsCard />
-                <LiveEventsCard />
-                <LiveEventsCard />
-              </div>
-            </Title>
-          </LightBG>
+          <LiveEvents />
           <DarkBG>
-            <div>l</div>
-          </DarkBG>
-          <LightBG>
             <Section text='Shows Near You' />
-          </LightBG>
+          </DarkBG>
+          {/* <LightBG></LightBG> */}
           <LightBG>
             <Section text='Shows Near You' />
           </LightBG>

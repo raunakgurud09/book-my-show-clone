@@ -5,8 +5,9 @@ import FillBtn from '@/components/ui/Buttons/FillBtn';
 import Image from 'next/image';
 import cx from 'classnames';
 import { Movies } from '@/data/Movies';
+import image from '../../../public/images/John-wick.jpg';
 
-function index({ imageUrl, time, previewText, about }) {
+function index({ name, imageUrl, time, previewText, about }) {
   return (
     <>
       <DarkBG>
@@ -23,6 +24,8 @@ function index({ imageUrl, time, previewText, about }) {
                 <div className='h-full '>
                   <div className='h-full rounded-xl'>
                     <Image
+                      width={288}
+                      height={500}
                       src={imageUrl}
                       alt='poster'
                       className='fill h-full w-72 rounded-md object-cover'
@@ -31,7 +34,7 @@ function index({ imageUrl, time, previewText, about }) {
                 </div>
                 <div>
                   <div className='flex h-full flex-col justify-center space-y-6'>
-                    <h3 className='text-3xl font-bold'>John Wick</h3>
+                    <h3 className='text-3xl font-bold'>{name}</h3>
                     <div>
                       <div>
                         {time} • {previewText} • UA
@@ -70,7 +73,21 @@ function index({ imageUrl, time, previewText, about }) {
 
 export default index;
 
-export const staticProps = () => {
-  const movie = Movies;
-  console.log(movie);
-};
+export async function getServerSideProps(context) {
+  const { MovieId } = context.params;
+
+  try {
+    const movie = Movies.find((movie) => {
+      if (movie._id == MovieId) {
+        return movie;
+      }
+    });
+    return {
+      props: movie, // will be passed to the page component as props
+    };
+  } catch (error) {
+    return {
+      props: Movies[0], // will be passed to the page component as props
+    };
+  }
+}

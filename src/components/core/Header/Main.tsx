@@ -1,4 +1,10 @@
-import { Play, PlayIcon, PlaylistIcon, SearchIcon } from '@/components/Icons';
+import {
+  BookMyShow,
+  Play,
+  PlayIcon,
+  PlaylistIcon,
+  SearchIcon,
+} from '@/components/Icons';
 import { MenuIcon } from '@/components/Icons/MenuIcon';
 import FillBtn from '@/components/ui/Buttons/FillBtn';
 import Link from 'next/link';
@@ -12,14 +18,8 @@ function Main() {
     <div className=' bg-slate-800 py-3'>
       <div className='m-auto flex  h-full max-w-[1500px] items-center justify-between px-10'>
         <div className='flex space-x-4'>
-          <Link href='/' className='h-full w-32'>
-            <Image
-              width={40}
-              height={20}
-              src={logo}
-              alt='logo'
-              className='h-full w-full object-cover'
-            />
+          <Link href='/' className='h-full w-24 flex items-center justify-center'>
+            <BookMyShow />
           </Link>
           <div className='flex h-9 items-center'>
             <div className='flex h-full items-center justify-center rounded-l-[4px] bg-white px-2'>
@@ -33,7 +33,7 @@ function Main() {
           </div>
         </div>
         <div className='flex items-center justify-between space-x-8'>
-          <div className='flex items-center space-x-2 cursor-pointer px-2 py-1 text-white'>
+          <div className='flex cursor-pointer items-center space-x-2 px-2 py-1 text-white'>
             <p>Mumbai</p>
             <div className='h-4 w-4 rotate-90'>
               <Play />
