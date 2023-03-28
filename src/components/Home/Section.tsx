@@ -11,7 +11,7 @@ function Section({ text }) {
           see more &gt;
         </Link>
       </div>
-      <div className='span-x relative flex  overflow-x-auto'>
+      <div className='span-x relative flex w-full overflow-x-auto'>
         <span className='absolute top-1/3 left-1 flex h-8 w-8 items-center justify-center rounded-full bg-slate-700/80 font-bold text-white'>
           <p>&lt;</p>
         </span>

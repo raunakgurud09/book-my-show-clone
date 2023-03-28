@@ -47,7 +47,7 @@ function Nav() {
         <div className='flex items-center justify-center space-x-8 text-gray-400'>
           {navList.map((nav) => (
             <div key={nav.name} className='relative  py-2'>
-              <Link href={nav.href} className='font-medium text-sm'>
+              <Link href={nav.href} className='font-medium text-sm hover:text-gray-100'>
                 {nav.name}
               </Link>
               {nav?.new === true && (

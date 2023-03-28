@@ -1,15 +1,24 @@
 import DarkBG from '@/components/core/Layouts/DarkBG';
+import LightBG from '@/components/core/Layouts/LightBG';
+import Title from '@/components/core/Layouts/Title';
 import FillBtn from '@/components/ui/Buttons/FillBtn';
-import DisplayCard from '@/components/ui/Cards/DisplayCard';
 import Image from 'next/image';
+import cx from 'classnames';
 import image from '../../../public/images/John-wick.jpg';
 
 function index() {
   const stats = 'fasnodfi';
+  const bgImageUrl = 'https://i.ytimg.com/vi/qEVUtrk8_B4/maxresdefault.jpg';
   return (
     <>
       <DarkBG>
-        <div className="relative flex h-[480px] w-full justify-between bg-[url('https://i.ytimg.com/vi/qEVUtrk8_B4/maxresdefault.jpg')] bg-cover bg-right bg-no-repeat  text-white">
+        <div
+          className={cx(
+            'relative flex h-[480px] w-full justify-between  bg-cover bg-right bg-no-repeat  text-white',
+            `bg-[url('https://i.ytimg.com/vi/qEVUtrk8_B4/maxresdefault.jpg')]`
+          )}
+          // style={{backgroundImage: `url(${bgImageUrl})`}}
+        >
           <div className='h-[480px] w-full bg-gradient-to-r from-stone-900/100 via-stone-900/80 to-stone-900/30'>
             <div className='flex h-full justify-between py-6'>
               <div className='flex h-full space-x-10'>
@@ -18,7 +27,7 @@ function index() {
                     <Image
                       src={image}
                       alt='poster'
-                      className='fill h-full w-72 rounded-t-md object-cover'
+                      className='fill h-full w-72 rounded-md object-cover'
                     />
                   </div>
                 </div>
@@ -42,12 +51,24 @@ function index() {
           </div>
         </div>
       </DarkBG>
-      <div className='m-auto flex h-full max-w-[1500px] items-center justify-between px-10 '>
-        <div>fsanovi</div>
-        <div>fsanovi</div>
-        <div>fsanovi</div>
-        <div>fsanovi</div>
-      </div>
+      <LightBG>
+        <div className='flex w-full flex-col'>
+          <Title title='About the movie'>
+            <div className='w-2/3'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur voluptatem autem, illo necessitatibus adipisci qui
+              eveniet. Consequatur nam, sint necessitatibus nesciunt architecto
+              quo doloremque voluptatem eius! Atque, omnis. Hic, atque.
+            </div>
+          </Title>
+          <Title title='Cast'>
+            <div>sjfld</div>
+          </Title>
+          <Title title='You might also like'>
+            <div>sjfld</div>
+          </Title>
+        </div>
+      </LightBG>
     </>
   );
 }
