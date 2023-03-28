@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import DisplayCard from '../ui/Cards/DisplayCard';
 
-function Section({ text }) {
+function Section({ text, data }) {
   return (
     <div className='w-full space-y-4 py-8'>
       <div className='flex items-center justify-between'>
@@ -17,11 +17,11 @@ function Section({ text }) {
           <p>&lt;</p>
         </span>
         <div className='left-0 flex items-center space-x-9'>
-          {Movies.map((movie) => (
+          {data.map((movie) => (
             <>
               <DisplayCard
-                key={movie.name}
-                href={movie.href}
+                key={movie._id}
+                href={movie?.href}
                 imageUrl={movie.imageUrl}
                 name={movie.name}
                 previewText={movie.previewText}

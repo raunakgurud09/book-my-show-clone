@@ -4,7 +4,11 @@ import Title from '@/components/core/Layouts/Title';
 import Error from '@/components/Error';
 import Advertisement from '@/components/Home/Advertisment';
 import Banner from '@/components/Home/Banner';
+import EventsNearYou from '@/components/Home/EventsNearYou';
 import LiveEvents from '@/components/Home/LiveEvents';
+import OutdoorEvents from '@/components/Home/OutdoorEvents';
+import Preview from '@/components/Home/Preview';
+import Recommended from '@/components/Home/Recommended';
 import Section from '@/components/Home/Section';
 import LiveEventsCard from '@/components/ui/Cards/LiveEventsCard';
 
@@ -19,23 +23,12 @@ const Home = ({ working }) => {
           <LightBG>
             <Banner />
           </LightBG>
-          <LightBG>
-            <Section text='Recommended Movies' />
-          </LightBG>
-          <LightBG>
-            <Advertisement />
-          </LightBG>
-          <LightBG>
-            <Section text='Shows Near You' />
-          </LightBG>
+          <Recommended />
+          <Advertisement />
           <LiveEvents />
-          <DarkBG>
-            <Section text='Shows Near You' />
-          </DarkBG>
-          {/* <LightBG></LightBG> */}
-          <LightBG>
-            <Section text='Shows Near You' />
-          </LightBG>
+          <Preview />
+          <EventsNearYou />
+          <OutdoorEvents />
         </>
       ) : (
         //   </div>

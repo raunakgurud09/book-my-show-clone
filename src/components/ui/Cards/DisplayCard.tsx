@@ -3,7 +3,7 @@ import image from '../../../../public/images/John-wick.jpg';
 import React from 'react';
 import Link from 'next/link';
 
-function DisplayCard({ href, imageUrl, name, previewText }) {
+function DisplayCard({ href = '/', imageUrl, name, previewText }) {
   return (
     <Link href={href} className='w-56 space-y-2'>
       <div className='rounded-xl'>
@@ -12,7 +12,7 @@ function DisplayCard({ href, imageUrl, name, previewText }) {
           height={280}
           src={imageUrl}
           alt='poster'
-          className='fill h-auto w-56 rounded-t-md object-cover'
+          className='fill h-auto w-56 rounded-md object-cover'
         />
         {/* <div className='rounded-b-md bg-black p-1 text-white'>{stats}</div> */}
       </div>
