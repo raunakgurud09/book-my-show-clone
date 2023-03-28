@@ -5,8 +5,8 @@ import React from 'react';
 
 function Main() {
   return (
-    <div className=' bg-slate-800 py-6'>
-      <div className='m-auto flex h-full max-w-[1500px] items-center justify-between px-3'>
+    <div className=' bg-slate-800 py-3'>
+      <div className='m-auto flex h-full max-w-[1500px] items-center justify-between px-10'>
         <div className='flex '>
           <div className='h-full w-32'>Logo</div>
           <div className='flex items-center '>

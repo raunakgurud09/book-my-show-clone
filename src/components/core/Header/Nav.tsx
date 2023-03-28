@@ -43,15 +43,15 @@ const options = [
 function Nav() {
   return (
     <div className='bg-slate-900'>
-      <div className='m-auto flex h-full max-w-[1500px] items-center justify-between px-3'>
+      <div className='mx-auto flex h-fit max-w-[1500px] items-center justify-between px-10'>
         <div className='flex items-center justify-center space-x-8 text-gray-400'>
           {navList.map((nav) => (
-            <div key={nav.name} className='relative  py-4'>
-              <Link href={nav.href} className='font-medium'>
+            <div key={nav.name} className='relative  py-2'>
+              <Link href={nav.href} className='font-medium text-sm'>
                 {nav.name}
               </Link>
               {nav?.new === true && (
-                <span className='absolute top-2 right-[0.5] text-xs font-semibold text-cyan-300'>
+                <span className='absolute top-2 right-[0.5] text-[8px] font-semibold text-cyan-300'>
                   NEW
                 </span>
               )}
@@ -65,7 +65,7 @@ function Nav() {
                 {nav.name}
               </Link>
               {nav?.new === true && (
-                <span className='absolute top-2 right-[0.5] text-xs font-semibold text-cyan-300'>
+                <span className='absolute top-2 right-[0.5] text-[8px] font-semibold text-cyan-300'>
                   NEW
                 </span>
               )}
