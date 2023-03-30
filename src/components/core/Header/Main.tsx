@@ -30,7 +30,7 @@ function Main() {
           >
             <BookMyShow />
           </Link>
-          <div className='flex h-9 items-center'>
+          <div className='lg:flex h-9 items-center hidden '>
             <div className='flex h-full items-center justify-center rounded-l-[4px] bg-white px-2'>
               <SearchIcon className='h-5 w-5 text-zinc-400' />
             </div>

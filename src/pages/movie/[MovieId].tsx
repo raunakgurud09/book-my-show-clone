@@ -7,6 +7,7 @@ import cx from 'classnames';
 import { Movies } from '@/data/Movies';
 import OutBtn from '@/components/ui/Buttons/OutBtn';
 import { ShareIcon } from '@/components/Icons';
+import DisplayCard from '@/components/ui/Cards/DisplayCard';
 
 function index({ name, imageUrl, time, previewText, about }) {
   return (
@@ -67,7 +68,16 @@ function index({ name, imageUrl, time, previewText, about }) {
             <div>info</div>
           </Title>
           <Title title='You might also like'>
-            <div>render more related content</div>
+            <>
+              {Movies.map((movie) => {
+                <DisplayCard
+                  href={movie.href}
+                  imageUrl={movie.imageUrl}
+                  name={movie.name}
+                  previewText={movie.previewText}
+                />;
+              })}
+            </>
           </Title>
         </div>
       </LightBG>
