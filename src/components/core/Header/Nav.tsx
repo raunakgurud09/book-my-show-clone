@@ -42,8 +42,8 @@ const options = [
 
 function Nav() {
   return (
-    <div className='bg-slate-900'>
-      <div className='mx-auto flex h-fit max-w-[1240px] items-center justify-between px-2'>
+    <div className='bg-slate-900 hidden lg:flex'>
+      <div className='mx-auto flex h-fit max-w-[1240px] w-full items-center justify-between px-2'>
         <div className='flex items-center justify-center space-x-8 text-gray-400'>
           {navList.map((nav) => (
             <div key={nav.name} className='relative  '>

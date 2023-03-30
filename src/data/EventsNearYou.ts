@@ -10,7 +10,7 @@ export const EventsNearYou = [
     _id: 2,
     name: 'Yo Yo Honey Singh 3.0',
     imageUrl:
-      'https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBBcHI%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00352114-fxgwhmrnbt-portrait.jpg',
+      'https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBBcHI%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00352114-rkjfmgpusj-portrait.jpg',
     previewText: 'MMRDA Ground: Mumbai 1.36km',
   },
   {

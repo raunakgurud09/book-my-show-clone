@@ -9,8 +9,8 @@ function Line() {
     <div
       id='line'
       className={cx(
-        'my-4 border-[0.25px]',
-        theme === 'light' ? 'border-black' : 'border-white/75'
+        ' border-[0.25px]',
+        theme === 'light' ? 'border-black' : 'border-black/75'
       )}
     ></div>
   );

@@ -16,7 +16,7 @@ const nextConfig = {
 
   // Uncomment to add domain whitelist
   images: {
-    domains: ['res.cloudinary.com', 'assets-in.bmscdn.com'],
+    domains: ['res.cloudinary.com', 'assets-in.bmscdn.com',"in.bmscdn.com"],
   },
 
   // SVGR
