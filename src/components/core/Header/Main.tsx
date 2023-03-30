@@ -13,7 +13,7 @@ import Image from 'next/image';
 import ChoseCity from '@/components/ui/Modal/ChoseCity';
 
 function Main() {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const [cityName, setCityName] = useState('Mumbai');
 
   const handleSelectCities = () => {
@@ -59,13 +59,13 @@ function Main() {
             />
           </div>
           <FillBtn text='sign up' cns='px-4 py-1 text-sm' />
-          <span
-            className='w-6 cursor-pointer fill-current text-white hover:text-primary-500'
+          <div
+            className='w-6 cursor-pointer fill-white text-white '
             aria-label='navigation menu'
             role='button'
           >
             <MenuIcon />
-          </span>
+          </div>
         </div>
       </div>
     </div>

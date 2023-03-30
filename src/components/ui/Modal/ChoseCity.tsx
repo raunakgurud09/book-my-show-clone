@@ -60,7 +60,7 @@ function ChoseCity({ show, onClose, setName }) {
     <div className='fixed left-0 right-0 bottom-0 top-0 z-10 flex items-center justify-center bg-black/50'>
       <div className='h-72 w-[1024px] bg-white'>
         <div onClick={onClose} className='p-1'>
-          <div className='bg-black/25 p-2 w-6 h-6 rounded-full flex justify-center items-center'>
+          <div className='bg-black/25 p-2 w-6 h-6 rounded-full flex justify-end items-center'>
             <p>X</p>
           </div>
         </div>
@@ -74,7 +74,7 @@ function ChoseCity({ show, onClose, setName }) {
               <input
                 type='text'
                 placeholder='Search your city'
-                className='h-9 w-full rounded-r-[4px] border-none p-2 text-zinc-200 focus:outline-none active:outline-none '
+                className='h-9 w-full rounded-r-[4px] border-none p-2 text-black  focus:outline-none active:outline-none '
               />
             </div>
           </div>
